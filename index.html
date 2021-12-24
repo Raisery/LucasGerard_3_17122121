@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="/public/css/style.css">
@@ -12,11 +12,11 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="public/img/logo/ohmyfood.png" alt="logo">
+        <div class="container">
+            <img class="header__logo" src="public/img/logo/ohmyfood.png" alt="logo">
         </div>
-        <div class="position-utilisateur">
-            <i class="fas fa-map-marker-alt"></i>
+        <div class="header__position-utilisateur">
+            <i class="fas fa-map-marker-alt header__icone"></i>
             <p>Paris, Belleville</p>
         </div>
     </header>
@@ -31,18 +31,33 @@
             <h1>Fonctionnement</h1>
             <div class="instruction">
                 <p class="rounded-number">1</p>
-                <i class="fas fa-mobile-alt"></i>
+                <i class="fas fa-mobile-alt instruction__icone"></i>
                 <p>Choisissez un restaurant</p>
             </div>
             <div class="instruction">
                 <p class="rounded-number">2</p>
-                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-list-ul instruction__icone"></i>
                 <p>Composez votre menu</p>
             </div>
             <div class="instruction">
-                <p class="rounded-number">3</p>
-                <i class="fas fa-store"></i>
+                <p class="instruction__rounded-number">3</p>
+                <i class="fas fa-store instruction__icone"></i>
                 <p>Dégustez au restaurant</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Restaurants</h1>
+            <div class="preview-restaurant">
+                <img class="preview-restaurant__img" src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg." alt="La palette du goût">
+                <p class="preview-restaurant__new">Nouveau</p>
+                <div class="preview-restaurant__description">
+                    <div>
+                        <h1>La palette du goût</h1>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <i class="fas fa-heart"></i>
+                </div>
             </div>
         </div>
 

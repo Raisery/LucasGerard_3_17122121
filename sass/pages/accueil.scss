@@ -20,5 +20,8 @@
     }
     &:hover {
         background: lighten($color: $colour-primary, $amount: 32%);
+        & i {
+            color: $colour-primary;
+        }
     }
 }

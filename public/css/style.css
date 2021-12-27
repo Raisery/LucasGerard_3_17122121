@@ -201,6 +201,9 @@ h2 {
 .instruction:hover {
   background: #e9ddf8;
 }
+.instruction:hover i {
+  color: #9356DC;
+}
 
 .header {
   width: 100%;

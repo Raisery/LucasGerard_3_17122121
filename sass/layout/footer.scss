@@ -7,11 +7,24 @@
     align-items: flex-start;
     & .logo {
         color: $colour-white;
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
     &__list {
         align-items: flex-start;
         & a {
             color: $colour-white;
+            flex-direction: row;
+            font-size: 1.7rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            & i {
+                width: 20px;
+                padding-right: 30px;
+            }
+            &:hover {
+                color: $colour-primary;
+            }
         }
 
     }

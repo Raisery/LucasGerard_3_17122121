@@ -1,9 +1,20 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
     background-color: $colour-white;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    & h1 {
+        width: 85%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    & h2 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    &--grey {
+        background-color: darken($color: $colour-white, $amount: 3%);
+    }
+
 }

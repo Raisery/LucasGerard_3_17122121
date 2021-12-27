@@ -67,7 +67,9 @@
 
     &--hover {
         display: none;
-        color: $colour-primary;
+        background: linear-gradient($colour-primary,$colour-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     &:hover{

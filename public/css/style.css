@@ -169,7 +169,9 @@ h2 {
 }
 .heart--hover {
   display: none;
-  color: #9356DC;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .heart:hover {
   cursor: pointer;

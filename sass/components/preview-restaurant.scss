@@ -68,7 +68,7 @@
     &--hover {
         display: none;
         background: linear-gradient($colour-primary,$colour-secondary);
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 

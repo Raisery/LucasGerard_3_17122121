@@ -3,27 +3,13 @@
     background-color: $colour-white;
     padding-top: 50px;
     padding-bottom: 60px;
-    &--grey {
-        background-color: darken($color: $colour-white, $amount: 3%);
-    }
     & h1 {
-        width: 100%;
-        align-items: flex-start;
+        align-self: flex-start;
         padding-left: 20px;
         margin-bottom: 20px;
     }
-    &--explorer {
-        & h1 {
-            width: 80%;
-            align-items: center;
-            text-align: center;
-            padding-bottom: 20px;
-        }
-        & h2 {
-            width: 100%;
-            text-align: center;
-            padding-bottom: 30px;
-        }
+    &--grey {
+        background-color: darken($color: $colour-white, $amount: 5%);
     }
 
 }

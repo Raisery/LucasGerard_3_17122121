@@ -1,3 +1,33 @@
+.position-utilisateur {
+    height: 50px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: darken($color: $colour-white, $amount: 8%);
+    &__icone {
+        margin-right: 12px;
+    }
+    &__lieu {
+        font-weight: 500;
+    }
+}
+
+.explorer {
+    align-items: center;
+    > .explorer__titre {
+        align-self: center;
+        width: 80%;
+        text-align: center;
+        padding-left: 0;
+    }
+    > .explorer__description {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+
 .instruction {
     flex-direction: row;
     width: 80%;

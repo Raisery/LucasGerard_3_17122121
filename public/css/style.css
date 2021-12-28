@@ -54,7 +54,23 @@ h2 {
   font-weight: 400;
 }
 
+.plat__texte__nom {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.plat__texte__precisions {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.plat__prix {
+  font-weight: 600;
+}
+.plat__validation {
+  font-size: 2rem;
+}
+
 .container {
+  height: auto;
   width: 100%;
   background-color: #fff;
   padding-top: 50px;
@@ -63,10 +79,9 @@ h2 {
 .container h1 {
   align-self: flex-start;
   padding-left: 20px;
-  margin-bottom: 20px;
 }
 .container--grey {
-  background-color: #f2f2f2;
+  background: #f2f2f2;
 }
 
 .btn {
@@ -177,6 +192,45 @@ h2 {
   display: none;
 }
 
+.plat {
+  position: relative;
+  flex-direction: row;
+  background: #fff;
+  width: 91%;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px #cccccc;
+  overflow: hidden;
+}
+.plat__texte {
+  width: 80%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.plat__texte__nom {
+  margin-bottom: 5px;
+}
+.plat__prix {
+  align-self: flex-end;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+.plat__validation {
+  display: none;
+  align-self: stretch;
+  justify-content: center;
+  width: 15%;
+  background: #99E2D0;
+  color: #fff;
+}
+.plat:hover .plat__validation {
+  display: flex;
+}
+
 .position-utilisateur {
   height: 50px;
   width: 100%;
@@ -200,6 +254,7 @@ h2 {
   width: 80%;
   text-align: center;
   padding-left: 0;
+  margin-bottom: 20px;
 }
 .explorer > .explorer__description {
   text-align: center;
@@ -237,10 +292,11 @@ h2 {
 .presentation-restaurant {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 40%;
 }
 .presentation-restaurant__img {
   width: 100%;
+  height: 70%;
   object-fit: cover;
 }
 .presentation-restaurant__texte {
@@ -252,14 +308,30 @@ h2 {
   padding-right: 20px;
   flex-direction: row;
   justify-content: space-between;
-  background: #fff;
+  background: #f2f2f2;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
 
+.menu__rubrique {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.menu__underline {
+  width: 35px;
+  height: 3px;
+  background: #99E2D0;
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
 .header {
   width: 100%;
-  height: 60px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -273,6 +345,7 @@ h2 {
 }
 .header__logo {
   width: 50%;
+  max-width: 100px;
 }
 .header__retour {
   position: absolute;

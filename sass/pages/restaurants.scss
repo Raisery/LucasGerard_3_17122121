@@ -1,10 +1,11 @@
 .presentation-restaurant{
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 40%;
 
     &__img {
         width: 100%;
+        height: 70%;
         object-fit: cover;
     }
     &__texte {
@@ -16,8 +17,25 @@
         padding-right: 20px;
         flex-direction: row;
         justify-content: space-between;
-        background: $colour-white;
+        background: darken($color: $colour-white, $amount: 5%);
         border-top-left-radius: 30px;
         border-top-right-radius: 30px; 
+    }
+}
+
+.menu {
+    &__rubrique {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    &__underline {
+        width: 35px;
+        height: 3px;
+        background: $colour-accent;
+        align-self: flex-start;
+        margin-left: 20px;
+        margin-bottom: 10px;
     }
 }

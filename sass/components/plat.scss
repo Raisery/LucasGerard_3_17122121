@@ -1,0 +1,41 @@
+.plat {
+    position: relative;
+    flex-direction: row;
+    background: $colour-white;
+    width: 91%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px  darken($color: $colour-white, $amount: 20%);
+    overflow: hidden;
+   &__texte {
+       width: 80%;
+       justify-content: center;
+       align-items: flex-start;
+       margin-top: 15px;
+       margin-bottom: 15px;
+       margin-left: 10px;
+       &__nom {
+           margin-bottom: 5px;
+       }
+   }
+   &__prix {
+       align-self: flex-end;
+       margin-bottom: 15px;
+       margin-right: 20px;
+   }
+   &__validation {
+       display: none;
+       align-self: stretch;
+       justify-content: center;
+       width: 15%;
+       background: $colour-accent;
+       color: $colour-white;
+   }
+
+   &:hover {
+       & .plat__validation {
+        display: flex;
+       }
+   }
+}

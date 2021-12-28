@@ -1,0 +1,23 @@
+.presentation-restaurant{
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+    &__texte {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30%;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        background: $colour-white;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px; 
+    }
+}

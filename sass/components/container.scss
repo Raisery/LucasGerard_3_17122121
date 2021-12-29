@@ -5,6 +5,7 @@
     & h1 {
         align-self: flex-start;
         padding-left: 20px;
+        padding-bottom: 20px;
     }
     &--grey {
         background: darken($color: $colour-white, $amount: 5%);

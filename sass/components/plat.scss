@@ -3,10 +3,11 @@
     flex-direction: row;
     background: $colour-white;
     width: 91%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     justify-content: space-between;
     border-radius: 10px;
-    box-shadow: 0px 5px 20px  darken($color: $colour-white, $amount: 20%);
+    border: none;
+    box-shadow: 0px 2px 20px  darken($color: $colour-white, $amount: 20%);
     overflow: hidden;
    &__texte {
        width: 80%;
@@ -32,8 +33,11 @@
        background: $colour-accent;
        color: $colour-white;
    }
+   > input {
+       display: none;
+   }
 
-   &:hover {
+   &:hover{
        & .plat__validation {
         display: flex;
        }

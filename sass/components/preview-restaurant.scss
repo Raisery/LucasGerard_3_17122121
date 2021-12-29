@@ -67,9 +67,10 @@
 
     &--hover {
         display: none;
-        background: linear-gradient($colour-primary,$colour-secondary);
+        background-image: linear-gradient($colour-primary,$colour-secondary);
+        color: transparent;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        
     }
 
     &:hover{

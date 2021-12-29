@@ -2,14 +2,20 @@
     height: auto;
     width: 100%;
     background-color: $colour-white;
-    padding-top: 50px;
-    padding-bottom: 60px;
     & h1 {
         align-self: flex-start;
         padding-left: 20px;
     }
     &--grey {
         background: darken($color: $colour-white, $amount: 5%);
+    }
+    &--spaced {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    &--menu {
+        padding-bottom: 20px;
     }
 
 }

@@ -2,7 +2,7 @@
     height: auto;
     width: 100%;
     background-color: $colour-white;
-    & h1 {
+    &__title {
         align-self: flex-start;
         padding-left: 20px;
         padding-bottom: 20px;
@@ -15,8 +15,5 @@
         padding-bottom: 60px;
     }
 
-    &--menu {
-        padding-bottom: 20px;
-    }
 
 }

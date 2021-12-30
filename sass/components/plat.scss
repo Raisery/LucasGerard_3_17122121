@@ -1,45 +1,62 @@
 .plat {
     position: relative;
-    flex-direction: row;
-    background: $colour-white;
-    width: 91%;
-    margin-bottom: 15px;
-    justify-content: space-between;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0px 2px 20px  darken($color: $colour-white, $amount: 20%);
     overflow: hidden;
-   &__texte {
-       width: 80%;
-       justify-content: center;
-       align-items: flex-start;
-       margin-top: 15px;
-       margin-bottom: 15px;
-       margin-left: 10px;
-       &__nom {
-           margin-bottom: 5px;
-       }
-   }
-   &__prix {
-       align-self: flex-end;
-       margin-bottom: 15px;
-       margin-right: 20px;
-   }
-   &__validation {
-       display: none;
-       align-self: stretch;
-       justify-content: center;
-       width: 15%;
-       background: $colour-accent;
-       color: $colour-white;
-   }
-   > input {
-       display: none;
-   }
+    flex-direction: row;
+    width: 90%;
+    background: $colour-white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding : 15px 10px 15px 10px;
+    
+    &__texte {
+        width: 85%;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 50px;
+        transition: all 400ms;
+        > * {
+            width: 100%;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+    }
+    &__prix {
+        width: 20%;
+        align-self: stretch;
+        justify-content: flex-end;
+       
+    }
+    &__validation {
+        position: absolute;
+        font-size: 2.5rem;
+        right: -15%;
+        width: 15%;
+        height: 100%;
+        justify-content: center;
+        background: $colour-accent;
+        color: $colour-white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: all 400ms;
+        & i {
+            transform: rotate(0deg);
+            transition: all 400ms;
+        }
+    }
 
-   &:hover{
-       & .plat__validation {
-        display: flex;
-       }
-   }
+    &:hover {
+        & .plat__texte {
+            width: 65%; 
+        }
+        & .plat__validation {
+            right: 0;
+            & i {
+                transform: rotate(360deg);
+            }
+            
+        }
+    }
 }

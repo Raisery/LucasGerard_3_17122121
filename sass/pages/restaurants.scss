@@ -25,18 +25,19 @@
 
 .menu {
     width: 100%;
+    padding-left: 20px;
     &__rubrique {
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 1.5rem;
-        margin-bottom: 5px;
+        align-self: flex-start;
+        padding-bottom: 5px;
     }
     &__underline {
-        width: 35px;
-        height: 3px;
-        background: $colour-accent;
         align-self: flex-start;
-        margin-left: 20px;
-        margin-bottom: 10px;
+        width: 5rem;
+        height: 4px;
+        background: $colour-accent;
+    }
+    &__liste-plats {
+        padding-top: 20px;
+        width: 100%;
     }
 }

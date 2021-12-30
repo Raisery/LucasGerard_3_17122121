@@ -35,15 +35,6 @@ body {
   font-size: 5rem;
 }
 
-h1 {
-  font-size: 2.8rem;
-}
-
-h2 {
-  font-weight: 100;
-  font-size: 2rem;
-}
-
 .btn {
   font-weight: 500;
   font-size: 1.8rem;
@@ -54,19 +45,23 @@ h2 {
   font-weight: 400;
 }
 
+.menu__rubrique {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .plat__texte__nom {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 .plat__texte__precisions {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .plat__prix {
-  font-weight: 600;
-}
-.plat__validation {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .container {
@@ -74,7 +69,7 @@ h2 {
   width: 100%;
   background-color: #fff;
 }
-.container h1 {
+.container__title {
   align-self: flex-start;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -85,9 +80,6 @@ h2 {
 .container--spaced {
   padding-top: 50px;
   padding-bottom: 60px;
-}
-.container--menu {
-  padding-bottom: 20px;
 }
 
 .btn {
@@ -204,45 +196,58 @@ h2 {
 
 .plat {
   position: relative;
-  flex-direction: row;
-  background: #fff;
-  width: 91%;
-  margin-bottom: 15px;
-  justify-content: space-between;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0px 2px 20px #cccccc;
   overflow: hidden;
+  flex-direction: row;
+  width: 90%;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 15px 10px 15px 10px;
 }
 .plat__texte {
-  width: 80%;
-  justify-content: center;
+  width: 85%;
   align-items: flex-start;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 10px;
+  justify-content: space-around;
+  height: 50px;
+  transition: all 400ms;
 }
-.plat__texte__nom {
-  margin-bottom: 5px;
+.plat__texte > * {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .plat__prix {
-  align-self: flex-end;
-  margin-bottom: 15px;
-  margin-right: 20px;
+  width: 20%;
+  align-self: stretch;
+  justify-content: flex-end;
 }
 .plat__validation {
-  display: none;
-  align-self: stretch;
-  justify-content: center;
+  position: absolute;
+  font-size: 2.5rem;
+  right: -15%;
   width: 15%;
+  height: 100%;
+  justify-content: center;
   background: #99E2D0;
   color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 400ms;
 }
-.plat > input {
-  display: none;
+.plat__validation i {
+  transform: rotate(0deg);
+  transition: all 400ms;
+}
+.plat:hover .plat__texte {
+  width: 65%;
 }
 .plat:hover .plat__validation {
-  display: flex;
+  right: 0;
+}
+.plat:hover .plat__validation i {
+  transform: rotate(360deg);
 }
 
 .position-utilisateur {
@@ -329,20 +334,21 @@ h2 {
 
 .menu {
   width: 100%;
+  padding-left: 20px;
 }
 .menu__rubrique {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
+  align-self: flex-start;
+  padding-bottom: 5px;
 }
 .menu__underline {
-  width: 35px;
-  height: 3px;
-  background: #99E2D0;
   align-self: flex-start;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  width: 5rem;
+  height: 4px;
+  background: #99E2D0;
+}
+.menu__liste-plats {
+  padding-top: 20px;
+  width: 100%;
 }
 
 .header {

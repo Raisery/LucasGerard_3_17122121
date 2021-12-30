@@ -11,15 +11,6 @@ body {
     font-size: 5rem;
 }
 
-h1 {
-    font-size: 2.8rem;
-}
-
-h2 {
-    font-weight: 100;
-    font-size: 2rem;    
-}
-
 .btn {
     font-weight: 500;
     font-size: 1.8rem;
@@ -30,21 +21,25 @@ h2 {
     font-weight: 400;
 }
 
-.plat {
-    &__texte {
-        &__nom {
-            font-size: 1.5rem;
-            font-weight: 500;
-        }
-        &__precisions {
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
+.menu {
+    &__rubrique {
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
     }
-    &__prix {
+}
+
+.plat {
+    &__texte__nom {
+        font-size: 1.8rem;
         font-weight: 600;
     }
-    &__validation {
-        font-size: 2rem;
+    &__texte__precisions {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    &__prix {
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 }

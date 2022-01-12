@@ -10,10 +10,16 @@ body {
 }
 
 
-.header__logo  {
+.header {
+    &__logo  {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 100;
     font-size: 2rem;
+    }
+
+    &__retour {
+        font-size: $step2;
+    }
 }
 
 .explorer__description {
@@ -22,7 +28,7 @@ body {
 
 .btn {
     font-weight: 500;
-    font-size: $step-1;
+    font-size: $step0
 }
 
 .preview-restaurant {
@@ -34,12 +40,6 @@ body {
     &__description h3{
        font-size: $step1;
     }
-
-    &__description .heart{
-        font-size: $step4;
-        font-weight: 100;
-    }
-
 
 }
 
@@ -57,19 +57,38 @@ body {
     }
 }
 
-.plat {
-    &__texte__nom {
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
-    &__texte__precisions {
-        font-size: 1.5rem;
+
+
+.heart{
+    font-size: $step4;
+    font-weight: 100;
+}
+
+.menu {
+    &__rubrique {
+        font-size: $step0;
         font-weight: 300;
     }
-    &__prix {
-        font-size: 1.5rem;
-        font-weight: 700;
+}
+
+.plat {
+    &__texte {
+        &__nom {
+            font-size: $step1;
+            font-weight: 500;
+        }
+        &__precisions {
+            font-size: $step-1;
+        }
     }
+    &__prix {
+        font-size: $step0;
+        font-weight: bold;
+    }
+    &__validation {
+        font-size: $step2;
+    }
+    
 }
 
 .footer {
@@ -79,4 +98,8 @@ body {
         font-weight: 400;
     }
     font-weight: 400;
+
+    &__list i {
+        font-size: $step-2;
+    }
 }

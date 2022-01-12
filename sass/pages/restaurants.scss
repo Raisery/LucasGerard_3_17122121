@@ -1,43 +1,51 @@
 .presentation-restaurant{
     position: relative;
     width: 100%;
-    height: 40%;
+    height: 350px;
+    margin-bottom: -10px;
 
     &__img {
         width: 100%;
-        height: 70%;
+        height: 80%;
         object-fit: cover;
     }
     &__texte {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 30%;
+        height: 125px;
+        padding-top: 40px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 40px;
         flex-direction: row;
+        align-items: flex-start;
         justify-content: space-between;
-        background: darken($color: $colour-white, $amount: 5%);
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px; 
+        background: darken($color: $colour-white, $amount: 3%);
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px; 
     }
 }
 
 .menu {
     width: 100%;
+    margin-top: -40px;
+    margin-bottom: 30px;
     padding-left: 20px;
+    z-index: 2;
     &__rubrique {
         align-self: flex-start;
         padding-bottom: 5px;
+        margin-top: 25px;
     }
     &__underline {
         align-self: flex-start;
-        width: 5rem;
-        height: 4px;
+        width: $step6;
+        height: 3px;
         background: $colour-accent;
     }
     &__liste-plats {
         padding-top: 20px;
+        margin-left: -20px;
         width: 100%;
     }
 }

@@ -58,27 +58,5 @@
 
 }
 
-.heart {
-    &--not-hover {
-        color: darken($color: $colour-white, $amount: 100%);
-    }
 
-    &--hover {
-        display: none;
-        background-image: linear-gradient($colour-primary,$colour-secondary);
-        color: transparent;
-        background-clip: text;
-        
-    }
-
-    &:hover{
-        cursor: pointer;
-        & .heart--hover {
-            display: initial;
-        }
-        & .heart--not-hover {
-            display: none;
-        }
-    }
-}
 

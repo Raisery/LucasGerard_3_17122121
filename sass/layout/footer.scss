@@ -2,7 +2,7 @@
     width: 100%;
     background: darken($color: $colour-white, $amount: 80%);
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 20px;
     align-items: flex-start;
     &__logo {
@@ -17,7 +17,7 @@
             margin-bottom: 10px;
             & i {
                 width: 20px;
-                padding-right: 30px;
+                padding-right: 15px;
             }
             &:hover {
                 color: $colour-primary;

@@ -2,24 +2,29 @@
     position: relative;
     overflow: hidden;
     flex-direction: row;
-    width: 90%;
+    width: 95%;
     background: $colour-white;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    padding : 15px 10px 15px 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding : 15px 5px 15px 10px;
+    box-shadow: 0px 10px 20px  darken($color: $colour-white, $amount: 10%);
+    cursor: pointer;
     
     &__texte {
         width: 85%;
         align-items: flex-start;
         justify-content: space-around;
-        height: 50px;
         transition: all 400ms;
+        &__nom {
+            margin-bottom: 5px;
+        }
         > * {
             width: 100%;
             display: inline-block;
             overflow: hidden;
-            white-space: nowrap;
             text-overflow: ellipsis;
+            
+            
         }
         
     }
@@ -31,9 +36,8 @@
     }
     &__validation {
         position: absolute;
-        font-size: 2.5rem;
-        right: -15%;
-        width: 15%;
+        right: -18%;
+        width: 18%;
         height: 100%;
         justify-content: center;
         background: $colour-accent;
@@ -50,6 +54,10 @@
     &:hover {
         & .plat__texte {
             width: 65%; 
+            
+            
+            white-space: nowrap;
+            
         }
         & .plat__validation {
             right: 0;

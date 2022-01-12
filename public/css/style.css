@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: clamp(0.88rem, 0.62rem + 1.29vw, 3.04rem);
+  font-size: clamp(0.89rem, 0.91rem - 0.12vw, 0.69rem);
 }
 
 body * {
@@ -24,7 +24,7 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: clamp(1rem, 0.6rem + 2.01vw, 4.38rem);
+  font-size: clamp(1.13rem, 1.1rem + 0.15vw, 1.38rem);
   font-weight: 300;
   line-height: 1;
 }
@@ -38,32 +38,31 @@ body {
   font-weight: 100;
   font-size: 2rem;
 }
+.header__retour {
+  font-size: clamp(1.42rem, 1.27rem + 0.79vw, 2.75rem);
+}
 
 .explorer__description {
-  font-size: clamp(1.07rem, 0.57rem + 2.5vw, 5.25rem);
+  font-size: clamp(1.27rem, 1.18rem + 0.41vw, 1.94rem);
 }
 
 .btn {
   font-weight: 500;
-  font-size: clamp(0.94rem, 0.61rem + 1.62vw, 3.65rem);
+  font-size: clamp(1.13rem, 1.1rem + 0.15vw, 1.38rem);
 }
 
 .preview-restaurant__new {
-  font-size: clamp(0.88rem, 0.62rem + 1.29vw, 3.04rem);
+  font-size: clamp(0.89rem, 0.91rem - 0.12vw, 0.69rem);
   font-weight: 500;
 }
 .preview-restaurant__description h3 {
-  font-size: clamp(1.07rem, 0.57rem + 2.5vw, 5.25rem);
-}
-.preview-restaurant__description .heart {
-  font-size: clamp(1.3rem, 0.37rem + 4.64vw, 9.07rem);
-  font-weight: 100;
+  font-size: clamp(1.27rem, 1.18rem + 0.41vw, 1.94rem);
 }
 
 .presentation-restaurant__texte h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
-  font-size: clamp(1.3rem, 0.37rem + 4.64vw, 9.07rem);
+  font-size: clamp(1.8rem, 1.36rem + 2.21vw, 5.5rem);
 }
 
 .menu__rubrique {
@@ -72,17 +71,29 @@ body {
   text-transform: uppercase;
 }
 
-.plat__texte__nom {
-  font-size: 1.8rem;
-  font-weight: 600;
+.heart {
+  font-size: clamp(1.8rem, 1.36rem + 2.21vw, 5.5rem);
+  font-weight: 100;
 }
-.plat__texte__precisions {
-  font-size: 1.5rem;
+
+.menu__rubrique {
+  font-size: clamp(1.13rem, 1.1rem + 0.15vw, 1.38rem);
   font-weight: 300;
 }
+
+.plat__texte__nom {
+  font-size: clamp(1.27rem, 1.18rem + 0.41vw, 1.94rem);
+  font-weight: 500;
+}
+.plat__texte__precisions {
+  font-size: clamp(1rem, 1rem - 0.02vw, 0.97rem);
+}
 .plat__prix {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: clamp(1.13rem, 1.1rem + 0.15vw, 1.38rem);
+  font-weight: bold;
+}
+.plat__validation {
+  font-size: clamp(1.42rem, 1.27rem + 0.79vw, 2.75rem);
 }
 
 .footer {
@@ -90,8 +101,11 @@ body {
 }
 .footer__logo {
   font-family: "Shrikhand", sans-serif;
-  font-size: clamp(1.07rem, 0.57rem + 2.5vw, 5.25rem);
+  font-size: clamp(1.27rem, 1.18rem + 0.41vw, 1.94rem);
   font-weight: 400;
+}
+.footer__list i {
+  font-size: clamp(0.89rem, 0.91rem - 0.12vw, 0.69rem);
 }
 
 .container {
@@ -204,6 +218,65 @@ body {
   padding: 0;
 }
 
+.plat {
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  width: 95%;
+  background: #fff;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 15px 5px 15px 10px;
+  box-shadow: 0px 10px 20px #e6e6e6;
+  cursor: pointer;
+}
+.plat__texte {
+  width: 85%;
+  align-items: flex-start;
+  justify-content: space-around;
+  transition: all 400ms;
+}
+.plat__texte__nom {
+  margin-bottom: 5px;
+}
+.plat__texte > * {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat__prix {
+  width: 20%;
+  align-self: stretch;
+  justify-content: flex-end;
+}
+.plat__validation {
+  position: absolute;
+  right: -18%;
+  width: 18%;
+  height: 100%;
+  justify-content: center;
+  background: #99E2D0;
+  color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 400ms;
+}
+.plat__validation i {
+  transform: rotate(0deg);
+  transition: all 400ms;
+}
+.plat:hover .plat__texte {
+  width: 65%;
+  white-space: nowrap;
+}
+.plat:hover .plat__validation {
+  right: 0;
+}
+.plat:hover .plat__validation i {
+  transform: rotate(360deg);
+}
+
 .heart--not-hover {
   color: black;
 }
@@ -221,62 +294,6 @@ body {
 }
 .heart:hover .heart--not-hover {
   display: none;
-}
-
-.plat {
-  position: relative;
-  overflow: hidden;
-  flex-direction: row;
-  width: 90%;
-  background: #fff;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  padding: 15px 10px 15px 10px;
-}
-.plat__texte {
-  width: 85%;
-  align-items: flex-start;
-  justify-content: space-around;
-  height: 50px;
-  transition: all 400ms;
-}
-.plat__texte > * {
-  width: 100%;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.plat__prix {
-  width: 20%;
-  align-self: stretch;
-  justify-content: flex-end;
-}
-.plat__validation {
-  position: absolute;
-  font-size: 2.5rem;
-  right: -15%;
-  width: 15%;
-  height: 100%;
-  justify-content: center;
-  background: #99E2D0;
-  color: #fff;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  transition: all 400ms;
-}
-.plat__validation i {
-  transform: rotate(0deg);
-  transition: all 400ms;
-}
-.plat:hover .plat__texte {
-  width: 65%;
-}
-.plat:hover .plat__validation {
-  right: 0;
-}
-.plat:hover .plat__validation i {
-  transform: rotate(360deg);
 }
 
 .position-utilisateur {
@@ -336,43 +353,51 @@ body {
 .presentation-restaurant {
   position: relative;
   width: 100%;
-  height: 40%;
+  height: 350px;
+  margin-bottom: -10px;
 }
 .presentation-restaurant__img {
   width: 100%;
-  height: 70%;
+  height: 80%;
   object-fit: cover;
 }
 .presentation-restaurant__texte {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 30%;
+  height: 125px;
+  padding-top: 40px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 40px;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
-  background: #f2f2f2;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  background: #f7f7f7;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 .menu {
   width: 100%;
+  margin-top: -40px;
+  margin-bottom: 30px;
   padding-left: 20px;
+  z-index: 2;
 }
 .menu__rubrique {
   align-self: flex-start;
   padding-bottom: 5px;
+  margin-top: 25px;
 }
 .menu__underline {
   align-self: flex-start;
-  width: 5rem;
-  height: 4px;
+  width: clamp(2.28rem, 1.24rem + 5.2vw, 10.99rem);
+  height: 3px;
   background: #99E2D0;
 }
 .menu__liste-plats {
   padding-top: 20px;
+  margin-left: -20px;
   width: 100%;
 }
 
@@ -398,19 +423,18 @@ body {
 }
 .header__retour {
   position: absolute;
-  top: 0;
+  left: 10px;
   height: 100%;
   align-items: flex-start;
   justify-content: center;
   padding-left: 20px;
-  font-size: 2rem;
 }
 
 .footer {
   width: 100%;
   background: #333333;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
   align-items: flex-start;
 }
@@ -428,7 +452,7 @@ body {
 }
 .footer__list a i {
   width: 20px;
-  padding-right: 30px;
+  padding-right: 15px;
 }
 .footer__list a:hover {
   color: #9356DC;

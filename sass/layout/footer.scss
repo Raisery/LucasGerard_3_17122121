@@ -5,9 +5,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: flex-start;
-    & .logo {
+    &__logo {
         color: $colour-white;
-        font-size: 2rem;
         margin-bottom: 20px;
     }
     &__list {
@@ -15,8 +14,6 @@
         & a {
             color: $colour-white;
             flex-direction: row;
-            font-size: 1.7rem;
-            font-weight: 400;
             margin-bottom: 10px;
             & i {
                 width: 20px;

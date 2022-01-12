@@ -4,3 +4,12 @@ $colour-accent: #99E2D0;
 $colour-white: #fff;
 $colour-invalid: #DB464B;
 
+$step-3: clamp(0.82rem, 0.62rem + 1.02vw, 2.53rem);
+$step-2: clamp(0.88rem, 0.62rem + 1.29vw, 3.04rem);
+$step-1: clamp(0.94rem, 0.61rem + 1.62vw, 3.65rem);
+$step0: clamp(1.00rem, 0.60rem + 2.01vw, 4.38rem);
+$step1: clamp(1.07rem, 0.57rem + 2.50vw, 5.25rem);
+$step2: clamp(1.14rem, 0.52rem + 3.08vw, 6.30rem);
+$step3: clamp(1.22rem, 0.46rem + 3.79vw, 7.56rem);
+$step4: clamp(1.30rem, 0.37rem + 4.64vw, 9.07rem);
+$step5: clamp(1.38rem, 0.25rem + 5.67vw, 10.89rem);

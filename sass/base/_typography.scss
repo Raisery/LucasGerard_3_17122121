@@ -1,24 +1,52 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-size: $step0;
+    font-weight: 300;
     line-height: 1;
 }
 
-.logo {
+.bold {
+    font-weight: 500;
+}
+
+
+.header__logo  {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 100;
-    font-size: 5rem;
+    font-size: 2rem;
+}
+
+.explorer__description {
+    font-size: $step1;
 }
 
 .btn {
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: $step-1;
+}
+
+.preview-restaurant {
+    &__new {
+        font-size: $step-2;
+        font-weight: 500;
+    }
+
+    &__description h3{
+       font-size: $step1;
+    }
+
+    &__description .heart{
+        font-size: $step4;
+        font-weight: 100;
+    }
+
+
 }
 
 .presentation-restaurant__texte h1{
     font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
+    font-size: $step4;
 }
 
 .menu {
@@ -42,4 +70,13 @@ body {
         font-size: 1.5rem;
         font-weight: 700;
     }
+}
+
+.footer {
+    &__logo {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: $step1;
+        font-weight: 400;
+    }
+    font-weight: 400;
 }

@@ -7,52 +7,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/prefixed/style.css">
 
     <title>OhMyFood</title>
 </head>
 <body>
     <header class="header header--accueil">
-        <img class="header__logo" src="public/img/logo/ohmyfood.png" alt="logo">
+        <div class="header__logo">
+            ohmyfood
+        </div>
     </header>
     <main>
         <div class="position-utilisateur">
             <i class="fas fa-map-marker-alt position-utilisateur__icone"></i>
-            <p class="position-utilisateur__lieu">Paris, Belleville</p>
+            <p class="position-utilisateur__lieu bold">Paris, Belleville</p>
         </div>
         <div class="container container--spaced container--grey explorer">
-            <h1 class="explorer__titre">Réservez le menu qui vous convient</h1>
-            <h2 class="explorer__description">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
+            <h2 class="explorer__titre">Réservez le menu qui vous convient</h2>
+            <p class="explorer__description">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <button class="btn">Explorer nos restaurants</button>
         </div>
 
         <div class="container container--spaced">
-            <h1 class="container__title">Fonctionnement</h1>
+            <h2 class="container__title">Fonctionnement</h2>
             <div class="instruction">
                 <p class="rounded-number">1</p>
                 <i class="fas fa-mobile-alt instruction__icone"></i>
-                <p>Choisissez un restaurant</p>
+                <p class="bold">Choisissez un restaurant</p>
             </div>
             <div class="instruction">
                 <p class="rounded-number">2</p>
                 <i class="fas fa-list-ul instruction__icone"></i>
-                <p>Composez votre menu</p>
+                <p class="bold">Composez votre menu</p>
             </div>
             <div class="instruction">
                 <p class="rounded-number">3</p>
                 <i class="fas fa-store instruction__icone"></i>
-                <p>Dégustez au restaurant</p>
+                <p class="bold">Dégustez au restaurant</p>
             </div>
         </div>
 
         <div class="container container--spaced container--grey">
-            <h1 class="container__title">Restaurants</h1>
+            <h2 class="container__title">Restaurants</h2>
             <a class="preview-restaurant" href="#">
                 <img class="preview-restaurant__img" src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                 <p class="preview-restaurant__new">Nouveau</p>
                 <div class="preview-restaurant__description">
                     <div>
-                        <h1>La palette du goût</h1>
+                        <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
                     </div>
                     <div class="heart">
@@ -67,7 +68,7 @@
                 <p class="preview-restaurant__new">Nouveau</p>
                 <div class="preview-restaurant__description">
                     <div>
-                        <h1>La note enchantée</h1>
+                        <h3>La note enchantée</h3>
                         <p>Charonne</p>
                     </div>
                     <div class="heart">
@@ -82,7 +83,7 @@
                 <p class="preview-restaurant__new preview-restaurant__new--disabled">Nouveau</p>
                 <div class="preview-restaurant__description">
                     <div>
-                        <h1>À la francaise</h1>
+                        <h3>À la francaise</h3>
                         <p>Cité Rouge</p>
                     </div>
                     <div class="heart">
@@ -97,7 +98,7 @@
                 <p class="preview-restaurant__new preview-restaurant__new--disabled">Nouveau</p>
                 <div class="preview-restaurant__description">
                     <div>
-                        <h1>Le délice des sens</h1>
+                        <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
                     </div>
                     <div class="heart">
@@ -111,7 +112,7 @@
 
     </main>
     <footer class="footer">
-        <h1 class="logo">ohmyfood</h1>
+        <h1 class="footer__logo">ohmyfood</h1>
         <div class="footer__list">
             <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
             <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>

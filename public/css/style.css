@@ -3,7 +3,6 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
@@ -22,6 +21,10 @@ a {
   color: black;
 }
 
+script {
+  width: 80px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: clamp(1.13rem, 1.1rem + 0.15vw, 1.38rem);
@@ -31,6 +34,11 @@ body {
 
 .bold {
   font-weight: 500;
+}
+
+.chargement h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: clamp(1.8rem, 1.36rem + 2.21vw, 5.5rem);
 }
 
 .header__logo {
@@ -229,6 +237,8 @@ body {
   padding: 15px 5px 15px 10px;
   box-shadow: 0px 10px 20px #e6e6e6;
   cursor: pointer;
+  opacity: 0;
+  animation: apparition_BH 1s ease forwards;
 }
 .plat__texte {
   width: 85%;
@@ -266,6 +276,18 @@ body {
   transform: rotate(0deg);
   transition: all 400ms;
 }
+.plat--1 {
+  animation-delay: 5s;
+}
+.plat--2 {
+  animation-delay: 5.2s;
+}
+.plat--3 {
+  animation-delay: 5.4s;
+}
+.plat--4 {
+  animation-delay: 5.6s;
+}
 .plat:hover .plat__texte {
   width: 65%;
   white-space: nowrap;
@@ -277,6 +299,16 @@ body {
   transform: rotate(360deg);
 }
 
+@keyframes apparition_BH {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .heart--not-hover {
   color: black;
 }
@@ -296,6 +328,67 @@ body {
   display: none;
 }
 
+.chargement {
+  position: fixed;
+  z-index: 5;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  animation: disparition 1s forwards;
+  animation-delay: 5s;
+}
+.chargement_barre {
+  display: block;
+  width: 80%;
+  height: 3%;
+  margin-top: 50px;
+  padding: 1px;
+  background-color: #9356DC;
+  border: solid #9356DC;
+  border-radius: 50px;
+  border-width: 3px;
+}
+.chargement_temoin {
+  width: 8%;
+  height: 100%;
+  background: #99E2D0;
+  border-radius: 50px;
+  animation: allez_retour 4.9s forwards;
+}
+
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    z-index: 5;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+@keyframes allez_retour {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(1150%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(1150%);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1150%);
+  }
+}
 .position-utilisateur {
   position: relative;
   height: 45px;

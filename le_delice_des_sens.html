@@ -7,11 +7,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="public/css/style.css">
+    <!-- <link rel="stylesheet" href="public/css/prefixed/style.css"> -->
+
 
 
     <title>OhMyFood - Le délice des sens</title>
 </head>
 <body>
+    <div class="chargement">
+        <h2>Chargement...</h2>
+        <div class="chargement_barre">
+            <div class="chargement_temoin"></div>
+        </div>
+    </div>
     <header class="header header--restaurants">
         <a class="header__retour" href="./index.html"><i class="fas fa-arrow-left"></i></a>
         <div class="header__logo">
@@ -35,7 +43,7 @@
             <h4 class="menu__rubrique">entrées</h4>
             <div class="menu__underline"></div>
             <div class="menu__liste-plats">
-                <div class="plat">
+                <div class="plat plat--1">
                     <div class="plat__texte">
                         <h3 class="plat__texte__nom">Tartare de thon</h3>
                         <p class="plat__texte__precisions">Assaisonné au yuzu</p>
@@ -45,7 +53,7 @@
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div class="plat">
+                <div class="plat plat--2">
                     <div class="plat__texte">
                         <h3 class="plat__texte__nom">Bouchée de homard croustillant</h3>
                         <p class="plat__texte__precisions">Et sa farandole de petits légumes</p>
@@ -55,7 +63,7 @@
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div class="plat">
+                <div class="plat plat--3">
                     <div class="plat__texte">
                         <h3 class="plat__texte__nom">Velouté de cèpes</h3>
                         <p class="plat__texte__precisions">Aux truffes</p>
@@ -69,7 +77,7 @@
             <h4 class="menu__rubrique">plats</h4>
             <div class="menu__underline"></div>
             <div class="menu__liste-plats">
-                <div class="plat">
+                <div class="plat plat--1">
                     <div class="plat__texte">
                         <h3 class="plat__texte__nom">Poulet rôti aux herbes de provence</h3>
                         <p class="plat__texte__precisions">Et sa créme de truffe</p>
@@ -79,7 +87,7 @@
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div class="plat">
+                <div class="plat plat--2">
                     <div class="plat__texte">
                         <h3 class="plat__texte__nom">Langouste rôtie</h3>
                         <p class="plat__texte__precisions">Et ses légumes de saison</p>
@@ -89,7 +97,7 @@
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div class="plat">
+                <div class="plat plat--3">
                     <div class="plat__texte">
                         <h3 class="plat__texte__nom">Côte de boeuf angus</h3>
                         <p class="plat__texte__precisions">Et sa purée de panais</p>
@@ -103,7 +111,7 @@
             <h4 class="menu__rubrique">desserts</h4>
             <div class="menu__underline"></div>
             <div class="menu__liste-plats">
-                <div class="plat">
+                <div class="plat plat--1">
                     <div class="plat__texte">
                         <h3 class="plat__texte__nom">Farandole de desserts</h3>
                         <p class="plat__texte__precisions">Du chef</p>
@@ -113,7 +121,7 @@
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div class="plat">
+                <div class="plat plat--2">
                     <div class="plat__texte">
                         <h3 class="plat__texte__nom">Crème brulée </h3>
                         <p class="plat__texte__precisions">Revisitée</p>
@@ -123,7 +131,7 @@
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div class="plat">
+                <div class="plat plat--3">
                     <div class="plat__texte">
                         <h3 class="plat__texte__nom">Tiramisu</h3>
                         <p class="plat__texte__precisions">À la noisette</p>

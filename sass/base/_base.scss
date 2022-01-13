@@ -3,7 +3,6 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
 }
 html {
     font-size: $step-2;
@@ -18,6 +17,10 @@ body *{
 a {
     text-decoration: none;
     color: black;
+}
+
+script {
+    width: 80px;
 }
 
 

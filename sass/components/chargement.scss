@@ -1,0 +1,72 @@
+.chargement {
+    position: fixed;
+    z-index: 5;
+    background: $colour-white;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    animation: disparition 1s forwards;
+    animation-delay: 5s;
+    &_barre {
+        display: block;
+        width: 80%;
+        height: 3%;
+        margin-top: 50px;
+        padding: 1px;
+        background-color: $colour-primary;
+        border: solid $colour-primary;
+        border-radius: 50px;
+        border-width: 3px;
+    }
+    &_temoin {
+        width: 8%;
+        height: 100%;
+        background: $colour-accent;
+        border-radius: 50px;
+        animation: allez_retour 4.9s forwards ;
+    }
+}
+
+
+
+@keyframes disparition {
+
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        z-index: 5;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@keyframes allez_retour {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(1150%);
+    }
+
+    40% {
+        transform: translateX(0%);
+    }
+
+    60% {
+        transform: translateX(1150%);
+    }
+
+    80% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(1150%);
+    }
+}

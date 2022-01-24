@@ -2,14 +2,13 @@
     position: relative;
     &--empty {
         position: absolute;
-        z-index: 1;
         color: darken($color: $colour-white, $amount: 100%);
         opacity: 1;
         transition: all 200ms ease-in;
     }
 
     &--fill {
-        z-index: 2;
+        
         background-image: linear-gradient($colour-primary,$colour-secondary);
         color: transparent;
         background-clip: text;

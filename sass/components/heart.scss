@@ -1,24 +1,42 @@
 .heart {
-    
-    &--not-hover {
+    position: relative;
+    &--empty {
+        position: absolute;
+        z-index: 1;
         color: darken($color: $colour-white, $amount: 100%);
+        opacity: 1;
+        transition: all 200ms ease-in;
     }
 
-    &--hover {
-        display: none;
+    &--fill {
+        z-index: 2;
         background-image: linear-gradient($colour-primary,$colour-secondary);
         color: transparent;
         background-clip: text;
+        transform: scale(0);
+        transition: all 200ms ease-in;
+
         
     }
 
     &:hover{
         cursor: pointer;
-        & .heart--hover {
-            display: initial;
+        & .heart--fill {
+            transform: scale(1);
         }
-        & .heart--not-hover {
-            display: none;
+        & .heart--empty {
+           opacity: 0;
+            
         }
+    }
+}
+
+@keyframes size_up {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

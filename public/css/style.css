@@ -96,6 +96,7 @@ body {
 }
 .plat__texte__precisions {
   font-size: clamp(1rem, 1rem - 0.02vw, 0.97rem);
+  line-height: 20px;
 }
 .plat__prix {
   font-size: clamp(1.13rem, 1.1rem + 0.15vw, 1.38rem);
@@ -168,7 +169,7 @@ body {
   background: #fff;
   border-radius: 15px;
   margin-bottom: 15px;
-  padding: 15px 5px 15px 10px;
+  padding: 12px 5px 10px 10px;
   box-shadow: 0px 10px 20px #e6e6e6;
   cursor: pointer;
   opacity: 0;

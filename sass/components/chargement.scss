@@ -6,7 +6,7 @@
     width: 100%;
     justify-content: center;
     animation: disparition 1s forwards;
-    animation-delay: 5s;
+    animation-delay: 2.5s;
     &_barre {
         display: block;
         width: 80%;
@@ -23,10 +23,9 @@
         height: 100%;
         background: $colour-accent;
         border-radius: 50px;
-        animation: allez_retour 4.9s forwards ;
+        animation: allez_retour 2.4s forwards ;
     }
 }
-
 
 
 @keyframes disparition {

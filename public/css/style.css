@@ -22,7 +22,7 @@ a {
 }
 
 script {
-  width: 80px;
+  display: none;
 }
 
 body {
@@ -90,7 +90,7 @@ body {
 }
 
 .plat__texte__nom {
-  font-size: clamp(1.27rem, 1.18rem + 0.41vw, 1.94rem);
+  font-size: clamp(1.13rem, 1.1rem + 0.15vw, 1.38rem);
   font-weight: 500;
 }
 .plat__texte__precisions {
@@ -254,6 +254,7 @@ body {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plat__prix {
   width: 20%;
@@ -277,20 +278,19 @@ body {
   transition: all 400ms;
 }
 .plat--1 {
-  animation-delay: 5s;
+  animation-delay: 2.5s;
 }
 .plat--2 {
-  animation-delay: 5.2s;
+  animation-delay: 2.7s;
 }
 .plat--3 {
-  animation-delay: 5.4s;
+  animation-delay: 2.9s;
 }
 .plat--4 {
-  animation-delay: 5.6s;
+  animation-delay: 3.1s;
 }
 .plat:hover .plat__texte {
   width: 65%;
-  white-space: nowrap;
 }
 .plat:hover .plat__validation {
   right: 0;
@@ -336,7 +336,7 @@ body {
   width: 100%;
   justify-content: center;
   animation: disparition 1s forwards;
-  animation-delay: 5s;
+  animation-delay: 2.5s;
 }
 .chargement_barre {
   display: block;
@@ -354,7 +354,7 @@ body {
   height: 100%;
   background: #99E2D0;
   border-radius: 50px;
-  animation: allez_retour 4.9s forwards;
+  animation: allez_retour 2.4s forwards;
 }
 
 @keyframes disparition {

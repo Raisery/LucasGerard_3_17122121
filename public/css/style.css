@@ -45,7 +45,7 @@ body {
 .header__logo {
   font-family: "Shrikhand", sans-serif;
   font-weight: 100;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 1.36rem + 2.21vw, 5.5rem);
 }
 .header__retour {
   font-size: clamp(1.42rem, 1.27rem + 0.79vw, 2.75rem);
@@ -138,6 +138,16 @@ body {
   padding-bottom: 60px;
 }
 
+@media (min-width: 768px) and (max-width: 900px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container__title {
+    width: 100%;
+  }
+}
 .btn {
   z-index: 1;
   color: #fff;
@@ -344,13 +354,12 @@ body {
   height: 45px;
   width: 100%;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   background: #e8e8e8;
 }
 .position-utilisateur__icone {
   position: absolute;
-  left: 28%;
+  transform: translate(-80px);
 }
 
 .explorer {
@@ -369,18 +378,8 @@ body {
   width: 90%;
 }
 
-.rounded-number {
-  height: 25px;
-  width: 25px;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  color: #fff;
-  background: #9356DC;
-  border-radius: 50%;
-}
-
 .instruction {
+  position: relative;
   flex-direction: row;
   width: 85%;
   height: 75px;
@@ -390,11 +389,20 @@ body {
   box-shadow: 0px 5px 5px #e6e6e6;
 }
 .instruction .rounded-number {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #fff;
+  background: #9356DC;
+  border-radius: 50%;
   transform: translateX(-12px);
 }
 .instruction i {
   color: gray;
-  padding-left: 15px;
+  padding-left: 30px;
   padding-right: 30px;
 }
 .instruction:hover {
@@ -461,6 +469,21 @@ body {
   padding: 0;
 }
 
+@media (min-width: 768px) and (max-width: 900px) {
+  .preview-restaurant {
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  .instruction {
+    width: 30%;
+    margin-right: 10px;
+    padding-right: 20px;
+  }
+  .instruction .rounded-number {
+    transform: translate(0, -40px);
+  }
+}
 .presentation-restaurant {
   position: relative;
   width: 100%;

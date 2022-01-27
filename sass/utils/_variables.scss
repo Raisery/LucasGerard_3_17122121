@@ -14,3 +14,6 @@ $step3: clamp(1.60rem, 1.33rem + 1.36vw, 3.89rem);
 $step4: clamp(1.80rem, 1.36rem + 2.21vw, 5.50rem);
 $step5: clamp(2.03rem, 1.34rem + 3.43vw, 7.77rem);
 $step6: clamp(2.28rem, 1.24rem + 5.20vw, 10.99rem);
+
+$breakpoint_min_tablet: 768px;
+$breakpoint_max_tablet: 900px;

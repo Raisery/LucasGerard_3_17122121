@@ -16,6 +16,15 @@
         padding-top: 40px;
         padding-bottom: 60px;
     }
+}
 
-
+@media  (min-width: $breakpoint_min_tablet) and (max-width: $breakpoint_max_tablet) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        &__title {
+            width: 100%;
+        }
+    }
 }

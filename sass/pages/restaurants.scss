@@ -47,3 +47,21 @@
         width: 100%;
     }
 }
+
+@media  (min-width: $breakpoint_min_tablet) and (max-width: $breakpoint_max_tablet) {
+    .menu {
+        flex-direction: column;
+        &__rubrique {
+            align-self: center;
+        }
+        &__underline {
+            align-self: center;
+        }
+    }
+
+    .presentation-restaurant {
+        &__texte {
+            height: 175px;
+        }
+    }
+}

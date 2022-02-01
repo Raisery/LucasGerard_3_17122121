@@ -381,7 +381,7 @@ body {
 .explorer > .explorer__description {
   text-align: center;
   margin-bottom: 20px;
-  width: 90%;
+  width: 100%;
 }
 
 .instruction {

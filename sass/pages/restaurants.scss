@@ -48,7 +48,7 @@
     }
 }
 
-@media  (min-width: $breakpoint_min_tablet) and (max-width: $breakpoint_max_tablet) {
+@media  (min-width: $breakpoint_min_tablet) {
     .menu {
         flex-direction: column;
         &__rubrique {
@@ -65,4 +65,12 @@
             height: 175px;
         }
     }
+}
+
+@media (min-width: $breakpoint_max_tablet) {
+   .menu {
+       width: 30%;
+   }
+
+
 }

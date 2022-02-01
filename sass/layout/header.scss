@@ -28,3 +28,9 @@
     }
 }
 
+@media (min-width: $breakpoint_max_tablet) {
+    .header {
+        height: 100px;
+    }
+}
+

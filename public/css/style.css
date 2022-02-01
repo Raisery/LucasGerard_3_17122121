@@ -81,7 +81,7 @@ body {
 }
 
 .heart {
-  font-size: clamp(1.8rem, 1.36rem + 2.21vw, 5.5rem);
+  font-size: clamp(1.6rem, 1.33rem + 1.36vw, 3.89rem);
   font-weight: 100;
 }
 
@@ -138,10 +138,11 @@ body {
   padding-bottom: 60px;
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 768px) {
   .container {
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
   .container__title {
@@ -477,7 +478,7 @@ body {
   padding: 0;
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 768px) {
   .preview-restaurant {
     width: 40%;
     margin-left: 20px;
@@ -541,7 +542,7 @@ body {
   width: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 768px) {
   .menu {
     flex-direction: column;
   }
@@ -554,6 +555,11 @@ body {
 
   .presentation-restaurant__texte {
     height: 175px;
+  }
+}
+@media (min-width: 900px) {
+  .menu {
+    width: 30%;
   }
 }
 .header {
@@ -585,6 +591,11 @@ body {
   padding-left: 20px;
 }
 
+@media (min-width: 900px) {
+  .header {
+    height: 100px;
+  }
+}
 .footer {
   width: 100%;
   background: #333333;

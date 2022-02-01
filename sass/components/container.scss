@@ -18,10 +18,11 @@
     }
 }
 
-@media  (min-width: $breakpoint_min_tablet) and (max-width: $breakpoint_max_tablet) {
+@media  (min-width: $breakpoint_min_tablet) {
     .container {
         flex-direction: row;
         justify-content: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         &__title {
             width: 100%;

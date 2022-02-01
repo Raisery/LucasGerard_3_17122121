@@ -57,9 +57,13 @@
         transform: translateX(-12px);
     }
     & i {
-        color: darken($color: $colour-white, $amount: 50%);
+        width: 70px;
         padding-left: 30px;
-        padding-right: 30px;
+        color: darken($color: $colour-white, $amount: 50%);
+        
+    }
+    & p {
+        align-items: flex-start;
     }
     &:hover {
         background: lighten($color: $colour-primary, $amount: 32%);
@@ -67,6 +71,8 @@
             color: $colour-primary;
         }
     }
+
+
 }
 
 .preview-restaurant {

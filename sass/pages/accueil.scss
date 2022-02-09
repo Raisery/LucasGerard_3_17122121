@@ -5,9 +5,6 @@
     flex-direction: row;   
     justify-content: center;
     background: darken($color: $colour-white, $amount: 9%);
-    &__lieu {
-        
-    }
     &__icone {
         position: absolute;
         transform: translate(-80px);

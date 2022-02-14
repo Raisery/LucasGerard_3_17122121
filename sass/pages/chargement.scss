@@ -29,15 +29,12 @@
 
 
 @keyframes disparition {
-
     0% {
         opacity: 1;
     }
-
     99% {
         z-index: 5;
     }
-
     100% {
         opacity: 0;
         z-index: 0;
@@ -48,23 +45,18 @@
     0% {
         transform: translateX(0);
     }
-
     20% {
         transform: translateX(1150%);
     }
-
     40% {
         transform: translateX(0%);
     }
-
     60% {
         transform: translateX(1150%);
     }
-
     80% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(1150%);
     }
